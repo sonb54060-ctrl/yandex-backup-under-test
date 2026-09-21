@@ -12,5 +12,13 @@
     "retry_attempts": "2",
     "interval": "30s"
   },
-  "scope": "Private probe function, timer delivery and invocation permissions only. No new PostgreSQL restore or forced-TTL cleanup test."
+  "scope": "Private probe function, timer delivery and invocation permissions only. No new PostgreSQL restore or forced-TTL cleanup test.",
+  "cleanup": {
+    "terraform_state_empty": true,
+    "functions_remaining": 0,
+    "triggers_remaining": 0,
+    "service_accounts_remaining": 0,
+    "log_groups_remaining": 0,
+    "folder_status": "PENDING_DELETION"
+  }
 }
