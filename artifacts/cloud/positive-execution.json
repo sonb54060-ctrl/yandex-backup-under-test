@@ -1,0 +1,16 @@
+{
+  "execution": {
+    "id": "dfqetoifgv5nlquoabhl-e8754903-43a9-4831-af7c-ad56a204d33e",
+    "workflow_id": "dfqetoifgv5nlquoabhl",
+    "input": {
+      "input_json": "{\"run_id\": \"positive-cloud-001\"}"
+    },
+    "result": {
+      "result_json": "{\"input\":{\"run_id\":\"positive-cloud-001\"},\"run\":{\"cleanup\":\"CONFIRMED_ABSENT\",\"phase\":\"DONE\",\"result\":\"PASS\",\"run_id\":\"positive-cloud-001\"},\"run_id\":\"positive-cloud-001\"}"
+    },
+    "status": "FINISHED",
+    "started_at": "2026-09-21T18:29:52.730898172Z",
+    "duration": "553.619012255s"
+  }
+}
+

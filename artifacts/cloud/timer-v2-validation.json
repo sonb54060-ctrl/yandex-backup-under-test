@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-21",
+  "provider": "0.228.0",
+  "resource": "yandex_serverless_triggers",
+  "five_field_cron_rejected": true,
+  "observed_test_cron": "* * * * ? *",
+  "observed_invocation_at": "2026-09-21T19:27:06.813089652Z",
+  "event_type": "yandex.cloud.events.serverless.triggers.TimerMessage",
+  "final_cron_confirmed_by_api": "*/15 * * * ? *",
+  "status": "ACTIVE",
+  "retry_policy": {
+    "retry_attempts": "2",
+    "interval": "30s"
+  },
+  "scope": "Private probe function, timer delivery and invocation permissions only. No new PostgreSQL restore or forced-TTL cleanup test."
+}

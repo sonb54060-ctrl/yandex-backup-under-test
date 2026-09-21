@@ -1,0 +1,17 @@
+{
+  "execution": {
+    "id": "dfqetoifgv5nlquoabhl-ebe50a14-316f-4eb6-946d-2340e86330f0",
+    "workflow_id": "dfqetoifgv5nlquoabhl",
+    "input": {
+      "input_json": "{\"run_id\": \"negative-cloud-001\"}"
+    },
+    "error": {
+      "message": "Recovery rehearsal did not pass; inspect the private report and janitor logs.",
+      "error_code": "STEP_FAIL"
+    },
+    "status": "FAILED",
+    "started_at": "2026-09-21T18:41:21.955448393Z",
+    "duration": "609.470719026s"
+  }
+}
+

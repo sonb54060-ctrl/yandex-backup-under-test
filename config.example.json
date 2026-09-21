@@ -1,0 +1,22 @@
+{
+  "lab_id": "backup-lab",
+  "source_folder_id": "source-folder",
+  "recovery_folder_id": "recovery-folder",
+  "source_cluster_id": "source-cluster",
+  "recovery_network_id": "recovery-network",
+  "recovery_subnet_id": "recovery-subnet",
+  "recovery_security_group_id": "recovery-security-group",
+  "attachments_bucket": "demo-files-bucket",
+  "control_bucket": "demo-control-bucket",
+  "zone": "ru-central1-b",
+  "postgres_version": "16",
+  "resource_preset_id": "s3-c2-m8",
+  "disk_size_gb": 10,
+  "database": "demo",
+  "database_user": "demo_owner",
+  "max_rows": 100,
+  "resource_ttl_seconds": 7200,
+  "restore_timeout_seconds": 3600,
+  "rto_target_seconds": 3600
+}
+

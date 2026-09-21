@@ -1,0 +1,8 @@
+cloud_id           = "<cloud-id>"
+operator_account_id = "<terraform-operator-iam-subject-id>"
+source_folder_id   = "<empty-test-source-folder-id>"
+recovery_folder_id = "<empty-test-recovery-folder-id>"
+lab_id             = "backup-lab"
+# One private host. Check the current tariff and available presets before applying.
+resource_preset_id = "s3-c2-m8"
+disk_size_gb       = 10

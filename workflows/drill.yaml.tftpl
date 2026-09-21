@@ -1,0 +1,51 @@
+yawl: "0.1"
+start: start_run
+steps:
+  start_run:
+    functionCall:
+      functionId: ${function_id}
+      input: '{{ {action: "start", run_id: (.run_id // null)} }}'
+      output: '{{ {run: .} }}'
+      next: poll
+  poll:
+    while:
+      condition: '.run.phase != "DONE" and .run.phase != "MANUAL_REVIEW" and .run.phase != "BUSY" and .run.phase != "NOT_FOUND"'
+      maxIterations: 240
+      do:
+        start: wait
+        steps:
+          wait:
+            wait:
+              duration: '30'
+              next: tick
+          tick:
+            functionCall:
+              functionId: ${function_id}
+              input: '{{ {action: "tick", run_id: .run.run_id} }}'
+              output: '{{ {run: .} }}'
+              timeout: 100s
+              retryPolicy:
+                errorList: [ALL]
+                retryCount: 2
+                initialDelay: 30s
+                maxDelay: 60s
+              catch:
+                - errorList: [ALL]
+                  output: '{{ {workflow_error: .error} }}'
+                  next: step_failed
+          step_failed:
+            fail:
+              errorMessage: "Controller unavailable; inspect the private report and janitor logs."
+      next: route
+  route:
+    switch:
+      choices:
+        - condition: '.run.phase == "DONE" and .run.result == "PASS"'
+          next: success
+      default:
+        next: failed
+  success:
+    success: {}
+  failed:
+    fail:
+      errorMessage: "Recovery rehearsal did not pass; inspect the private report and janitor logs."

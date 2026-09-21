@@ -1,0 +1,84 @@
+{
+  "mode": "LOCAL_SIMULATION_NO_CLOUD_RESTORE",
+  "run_id": "missing-version",
+  "result": "FAIL",
+  "checks": [
+    {
+      "name": "nonempty_dataset",
+      "ok": true,
+      "detail": "Восстановлены заказы"
+    },
+    {
+      "name": "row_count",
+      "ok": true,
+      "detail": "Получено 10 записей"
+    },
+    {
+      "name": "amount_total",
+      "ok": true,
+      "detail": "Сумма заказов соответствует контрольной точке"
+    },
+    {
+      "name": "unique_ids",
+      "ok": true,
+      "detail": "Идентификаторы уникальны"
+    },
+    {
+      "name": "dataset_digest",
+      "ok": true,
+      "detail": "Записи и ссылки на вложения соответствуют контрольной точке"
+    },
+    {
+      "name": "attachment:1",
+      "ok": false,
+      "detail": "MISSING_VERSION"
+    },
+    {
+      "name": "attachment:2",
+      "ok": true,
+      "detail": "VERSION_AND_HASH_MATCH"
+    },
+    {
+      "name": "attachment:3",
+      "ok": true,
+      "detail": "VERSION_AND_HASH_MATCH"
+    },
+    {
+      "name": "attachment:4",
+      "ok": true,
+      "detail": "VERSION_AND_HASH_MATCH"
+    },
+    {
+      "name": "attachment:5",
+      "ok": true,
+      "detail": "VERSION_AND_HASH_MATCH"
+    },
+    {
+      "name": "attachment:6",
+      "ok": true,
+      "detail": "VERSION_AND_HASH_MATCH"
+    },
+    {
+      "name": "attachment:7",
+      "ok": true,
+      "detail": "VERSION_AND_HASH_MATCH"
+    },
+    {
+      "name": "attachment:8",
+      "ok": true,
+      "detail": "VERSION_AND_HASH_MATCH"
+    },
+    {
+      "name": "attachment:9",
+      "ok": true,
+      "detail": "VERSION_AND_HASH_MATCH"
+    },
+    {
+      "name": "attachment:10",
+      "ok": true,
+      "detail": "VERSION_AND_HASH_MATCH"
+    }
+  ],
+  "finished_at": 1790012024.1666636,
+  "cleanup": "IN_MEMORY_ONLY"
+}

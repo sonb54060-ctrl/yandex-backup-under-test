@@ -1,0 +1,165 @@
+{
+  "checked_at": "2026-09-21T19:02:37.000699+00:00",
+  "folders": {
+    "source": {
+      "id": "b1gtu2upv5i1dbdm8at0",
+      "resources": {
+        "postgresql_clusters": {
+          "count": 0,
+          "ids": []
+        },
+        "postgresql_backups": {
+          "count": 2,
+          "ids": [
+            "c9qj3lmfcnnv81u8mem2:mdbpdgfuvrufats7f8vu",
+            "c9qj3lmfcnnv81u8mem2:mdbq0gknmehm7h2gltqt"
+          ],
+          "backups": [
+            {
+              "id": "c9qj3lmfcnnv81u8mem2:mdbpdgfuvrufats7f8vu",
+              "source_cluster_id": "c9qj3lmfcnnv81u8mem2",
+              "type": "AUTOMATED"
+            },
+            {
+              "id": "c9qj3lmfcnnv81u8mem2:mdbq0gknmehm7h2gltqt",
+              "source_cluster_id": "c9qj3lmfcnnv81u8mem2",
+              "type": "MANUAL"
+            }
+          ]
+        },
+        "functions": {
+          "count": 0,
+          "ids": []
+        },
+        "triggers": {
+          "count": 0,
+          "ids": []
+        },
+        "workflows": {
+          "count": 0,
+          "ids": []
+        },
+        "buckets": {
+          "count": 0,
+          "ids": []
+        },
+        "secrets": {
+          "count": 0,
+          "ids": []
+        },
+        "service_accounts": {
+          "count": 0,
+          "ids": []
+        },
+        "networks": {
+          "count": 0,
+          "ids": []
+        },
+        "log_groups": {
+          "count": 0,
+          "ids": []
+        }
+      },
+      "folder_delete_operation": {
+        "id": "b1gk51iarp9h6f5k4n44",
+        "description": "Delete folder",
+        "created_at": "2026-09-21T19:08:40.919337214Z",
+        "created_by": "ajeallsck3agqt3lh3pg",
+        "modified_at": "2026-09-21T19:08:40.919337214Z",
+        "metadata": {
+          "@type": "type.googleapis.com/yandex.cloud.resourcemanager.v1.DeleteFolderMetadata",
+          "folder_id": "b1gtu2upv5i1dbdm8at0",
+          "delete_after": "2026-09-21T19:07:25.550643200Z"
+        }
+      },
+      "folder_status": "PENDING_DELETION"
+    },
+    "recovery": {
+      "id": "b1grjesba2kegao3krpi",
+      "resources": {
+        "postgresql_clusters": {
+          "count": 0,
+          "ids": []
+        },
+        "postgresql_backups": {
+          "count": 0,
+          "ids": [],
+          "backups": []
+        },
+        "functions": {
+          "count": 0,
+          "ids": []
+        },
+        "triggers": {
+          "count": 0,
+          "ids": []
+        },
+        "workflows": {
+          "count": 0,
+          "ids": []
+        },
+        "buckets": {
+          "count": 0,
+          "ids": []
+        },
+        "secrets": {
+          "count": 0,
+          "ids": []
+        },
+        "service_accounts": {
+          "count": 0,
+          "ids": []
+        },
+        "networks": {
+          "count": 0,
+          "ids": []
+        },
+        "log_groups": {
+          "count": 0,
+          "ids": []
+        }
+      },
+      "folder_delete_operation": {
+        "id": "b1gujmpg872ohc2spp3b",
+        "description": "Delete folder",
+        "created_at": "2026-09-21T19:08:45.207562985Z",
+        "created_by": "ajeallsck3agqt3lh3pg",
+        "modified_at": "2026-09-21T19:08:45.207562985Z",
+        "metadata": {
+          "@type": "type.googleapis.com/yandex.cloud.resourcemanager.v1.DeleteFolderMetadata",
+          "folder_id": "b1grjesba2kegao3krpi",
+          "delete_after": "2026-09-21T19:07:29.988554900Z"
+        }
+      },
+      "folder_status": "PENDING_DELETION"
+    }
+  },
+  "all_listed_resources_absent": false,
+  "all_other_listed_resources_absent": true,
+  "retained_backups_policy": "Deleted cluster backups are retained 7 days without charge; the service removes them automatically.",
+  "retained_backups_policy_source": "https://yandex.cloud/ru/docs/managed-postgresql/concepts/backup",
+  "existing_default_network": {
+    "id": "enp7cjbne7b5tuj76lm0",
+    "name": "default",
+    "folder_id": "b1gmgcosbqhibq7duv38"
+  },
+  "source_cluster_delete_operation": {
+    "id": "c9qn0tbhc6e8v7mlrc5l",
+    "description": "Delete PostgreSQL cluster",
+    "created_at": "2026-09-21T18:59:54.389144Z",
+    "created_by": "ajeallsck3agqt3lh3pg",
+    "modified_at": "2026-09-21T19:01:58.010479Z",
+    "done": true,
+    "metadata": {
+      "@type": "type.googleapis.com/yandex.cloud.mdb.postgresql.v1.DeleteClusterMetadata",
+      "cluster_id": "c9qj3lmfcnnv81u8mem2"
+    },
+    "response": {
+      "@type": "type.googleapis.com/google.protobuf.Empty",
+      "value": {}
+    }
+  },
+  "terraform_states_empty": true,
+  "networks_checked_at": "2026-09-21T19:07:19.922318+00:00",
+  "default_folder_status": "ACTIVE"
+}

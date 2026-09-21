@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-21",
+  "environment": "YANDEX_CLOUD",
+  "concurrent_start": {
+    "run_id": "concurrent-probe-001",
+    "phase": "BUSY",
+    "result": "NOT_RUN"
+  },
+  "anonymous_requests": {
+    "checkpoint": 403,
+    "attachment": 403
+  },
+  "workflow_schedule_enabled": {
+    "cron_expression": "0 3 * * * *",
+    "timezone": "UTC"
+  },
+  "workflow_schedule_disabled": true,
+  "scheduled_execution_observed": false,
+  "expired_resource_janitor_tested_in_cloud": false,
+  "schedule_disable_method": "yc serverless workflow update --remove-schedule",
+  "structured_logging_sample": {
+    "entries_checked": 30,
+    "controller_messages": 6,
+    "janitor_invocation_seen": true,
+    "full_log_audit": false
+  },
+  "versions": {
+    "python": "3.12",
+    "terraform": "1.16.3",
+    "yandex_provider": "0.228.0",
+    "yc": "1.36.0",
+    "postgresql": "16"
+  },
+  "configuration": {
+    "zone": "ru-central1-b",
+    "resource_preset_id": "s3-c2-m8",
+    "disk_size_gb": 10,
+    "max_rows": 100,
+    "rto_target_seconds": 3600,
+    "resource_ttl_seconds": 7200
+  },
+  "function_archive_sha256": "bd13425c5c708bd90625b7f8ad30cb8a7142308f2cf58de3ded6a3980f212074",
+  "positive_fixture_actions": [
+    "mutate-order",
+    "overwrite",
+    "delete-marker"
+  ],
+  "negative_fixture_action": "remove-version of order 1 after positive PASS"
+}
